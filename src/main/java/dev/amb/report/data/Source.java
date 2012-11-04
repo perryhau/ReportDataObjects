@@ -1,9 +1,11 @@
 package dev.amb.report.data;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import java.util.Date;
 
 
+@JsonIgnoreProperties("dateTimeAccessed")
 public class Source {
 
     @JsonProperty("sourceName")
@@ -44,8 +46,5 @@ public class Source {
     public Date getDateTimeAccessed() {
         return dateTimeAccessed;
     }
-    
-    // TODO do I need to make sure that there is either a setter or an ignore flag on this property?
-    
     
 }

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite failures="0" time="0.008" errors="0" skipped="0" tests="1" name="dev.amb.report.io.reportdataobjects.AppTest">
+<testsuite failures="0" time="0.009" errors="0" skipped="0" tests="1" name="dev.amb.report.io.reportdataobjects.AppTest">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Libraries"/>
@@ -17,7 +17,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.os.patch.level" value="unknown"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="/Users/AntBurke/NetBeansProjects/ReportDataObjects"/>
+    <property name="user.dir" value="/Users/AntBurke/dev/github/ReportDataObjects"/>
     <property name="java.runtime.version" value="1.6.0_37-b06-434-11M3909"/>
     <property name="java.awt.graphicsenv" value="apple.awt.CGraphicsEnvironment"/>
     <property name="java.endorsed.dirs" value="/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/endorsed"/>
