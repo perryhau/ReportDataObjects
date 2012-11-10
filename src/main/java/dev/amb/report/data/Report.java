@@ -35,6 +35,9 @@ public class Report {
     @JsonProperty("terms")
     private ArrayList<Term> terms = new ArrayList<Term>();
     
+    @JsonProperty("sentences")
+    private ArrayList<String> sentences;
+    
     public Report() {   }
     
     public Report(String uid, String titleIn, Source sourceIn, String contentIn) {
@@ -109,4 +112,13 @@ public class Report {
     public void setTerms(ArrayList<Term> terms) {
         this.terms = terms;
     }
+
+    public ArrayList<String> getSentences() {
+        return sentences;
+    }
+
+    public void setSentences(ArrayList<String> sentences) {
+        this.sentences = sentences;
+    }
+    
 }
