@@ -31,7 +31,7 @@ public class Source {
         return sourceName;
     }
 
-    public void setName(String name) {
+    final public void setName(String name) {
         this.sourceName = name;
     }
 
@@ -39,7 +39,7 @@ public class Source {
         return sourceUrl;
     }
 
-    public void setSourceUrl(String sourceUrl) {
+    final public void setSourceUrl(String sourceUrl) {
         this.sourceUrl = sourceUrl;
     }
 

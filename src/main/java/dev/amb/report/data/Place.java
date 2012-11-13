@@ -30,7 +30,7 @@ public class Place {
         return placeName;
     }
 
-    public void setPlaceName(String placeName) {
+    final public void setPlaceName(String placeName) {
         this.placeName = placeName;
     }
 
@@ -38,7 +38,7 @@ public class Place {
         return country;
     }
 
-    public void setCountry(String country) {
+    final public void setCountry(String country) {
         this.country = country;
     }
 
@@ -46,7 +46,7 @@ public class Place {
         return latitude;
     }
 
-    public void setLatitude(double latitude) {
+    final public void setLatitude(double latitude) {
         this.latitude = latitude;
     }
 
@@ -54,7 +54,7 @@ public class Place {
         return longitude;
     }
 
-    public void setLongitude(double longitude) {
+    final public void setLongitude(double longitude) {
         this.longitude = longitude;
     }
 

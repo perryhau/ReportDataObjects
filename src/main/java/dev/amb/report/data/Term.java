@@ -19,7 +19,7 @@ public class Term implements Comparable<Term> {
         return frequency;
     }
 
-    public void setFrequency(long frequency) {
+    final public void setFrequency(long frequency) {
         this.frequency = frequency;
     }
 
@@ -27,7 +27,7 @@ public class Term implements Comparable<Term> {
         return term;
     }
 
-    public void setTerm(String term) {
+    final public void setTerm(String term) {
         this.term = term;
     }
 

@@ -61,7 +61,7 @@ public class Report {
         return reportUid;
     }
 
-    public void setReportUid(String reportUid) {
+    final public void setReportUid(String reportUid) {
         this.reportUid = reportUid;
     }
     
@@ -69,7 +69,7 @@ public class Report {
         return title;
     }
 
-    public void setTitle(String title) {
+    final public void setTitle(String title) {
         this.title = title;
     }
 
@@ -77,7 +77,7 @@ public class Report {
         return source;
     }
 
-    public void setSource(Source source) {
+    final public void setSource(Source source) {
         this.source = source;
     }
 
@@ -85,7 +85,7 @@ public class Report {
         return content;
     }
 
-    public void setContent(String content) {
+    final public void setContent(String content) {
         this.content = content;
     }
 
@@ -93,7 +93,7 @@ public class Report {
         return places;
     }
 
-    public void setPlaces(ArrayList<Place> places) {
+    final public void setPlaces(ArrayList<Place> places) {
         this.places = places;
     }
 
@@ -101,7 +101,7 @@ public class Report {
         return entities;
     }
 
-    public void setEntities(ArrayList<Entity> entities) {
+    final public void setEntities(ArrayList<Entity> entities) {
         this.entities = entities;
     }
 
@@ -117,7 +117,7 @@ public class Report {
         return sentences;
     }
 
-    public void setSentences(ArrayList<String> sentences) {
+    final public void setSentences(ArrayList<String> sentences) {
         this.sentences = sentences;
     }
     

@@ -50,7 +50,7 @@ public class Entity {
         return type;
     }
 
-    public void setType(String type) {
+    final public void setType(String type) {
         this.type = type;
     }
 
@@ -58,7 +58,7 @@ public class Entity {
         return startIndex;
     }
 
-    public void setStartIndex(long startIndex) {
+    final public void setStartIndex(long startIndex) {
         this.startIndex = startIndex;
     }
 
@@ -66,7 +66,7 @@ public class Entity {
         return endIndex;
     }
 
-    public void setEndIndex(long endIndex) {
+    final public void setEndIndex(long endIndex) {
         this.endIndex = endIndex;
     }
 
@@ -74,7 +74,7 @@ public class Entity {
         return aliases;
     }
 
-    public void setAliases(ArrayList<Entity> aliases) {
+    final public void setAliases(ArrayList<Entity> aliases) {
         this.aliases = aliases;
     }
 }
