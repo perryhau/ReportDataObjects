@@ -57,4 +57,9 @@ public class Place {
     public void setLongitude(double longitude) {
         this.longitude = longitude;
     }
+
+    public String getKmlCoord() {
+        
+        return (this.longitude + "," + this.latitude + ",0");
+    }
 }
