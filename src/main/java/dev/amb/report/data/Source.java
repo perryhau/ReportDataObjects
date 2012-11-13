@@ -2,10 +2,11 @@ package dev.amb.report.data;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
+import java.util.Calendar;
 import java.util.Date;
 
 
-@JsonIgnoreProperties("dateTimeAccessed")
+@JsonIgnoreProperties("publishedTimestamp ")
 public class Source {
 
     @JsonProperty("sourceName")
@@ -14,18 +15,30 @@ public class Source {
     @JsonProperty("sourceUrl")
     private String sourceUrl;
     
-    @JsonProperty("dateTimeAccessed")
-    private Date dateTimeAccessed;
+    @JsonProperty("accessTimestamp")
+    private Long accessTimestamp;
+    
+    @JsonProperty("publishedTimestamp")
+    private Long publishedTimestamp;
     
     public Source() { 
-        this.dateTimeAccessed = new Date();
+        this.accessTimestamp = new Date().getTime();
     }
     
-    public Source(String nameIn, String sourceUrlIn, Date dateTimeIn) {
+    public Source(String nameIn, String sourceUrlIn, Date publishedDateTime ) {
         this.setName(nameIn);
         this.setSourceUrl(sourceUrlIn);
-        this.dateTimeAccessed = dateTimeIn;
+        this.accessTimestamp = new Date().getTime();
+        this.publishedTimestamp = publishedDateTime.getTime();
     }
+    
+        public Source(String nameIn, String sourceUrlIn, Calendar publishedDateTime ) {
+        this.setName(nameIn);
+        this.setSourceUrl(sourceUrlIn);
+        this.accessTimestamp = new Date().getTime();
+        this.publishedTimestamp = publishedDateTime.getTime().getTime();
+    }
+        
 
     public String getName() {
         return sourceName;
@@ -43,8 +56,14 @@ public class Source {
         this.sourceUrl = sourceUrl;
     }
 
-    public Date getDateTimeAccessed() {
-        return dateTimeAccessed;
+    public Long getAccessedTimestamp() {
+        return accessTimestamp;
     }
+
+    public Long getPublishedTimestamp() {
+        return publishedTimestamp;
+    }
+    
+    
     
 }

@@ -7,6 +7,7 @@ import dev.amb.report.data.Place;
 import dev.amb.report.data.Report;
 import dev.amb.report.data.Term;
 import java.util.ArrayList;
+import java.util.Date;
 
 /**
  *
@@ -27,7 +28,22 @@ public class GraphConvertor {
         
         graph.setDescription("Graph_" + report.getTitle() + "_" + report.getReportUid());
         graph.setGraphId(report.getReportUid());
-        graph.setTimestamp(report.getSource().getDateTimeAccessed().getTime());
+        
+        Long publish = report.getSource().getPublishedTimestamp();
+        Long access = report.getSource().getAccessedTimestamp();
+        
+        if(publish == null && access == null) {
+            graph.setTimestamp(new Date().getTime());
+            
+        } else if(access == null && publish != null) {
+            graph.setTimestamp(publish);
+            
+        } else if(access != null && publish == null) {
+            graph.setTimestamp(access);
+            
+        } else if(publish != null && access != null){
+            graph.setTimestamp(publish);
+        }
         
         ArrayList<Node> nodes = new ArrayList<Node>();
         ArrayList<Link> links = new ArrayList<Link>();

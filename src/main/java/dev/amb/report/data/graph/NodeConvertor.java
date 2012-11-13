@@ -61,7 +61,7 @@ public class NodeConvertor {
         node.setNodeUid(source.getSourceUrl());
         node.setType("source");
         node.getProperties().put("name" , source.getName());
-        node.getProperties().put("timestamp" , String.valueOf(source.getDateTimeAccessed().getTime()));
+//        node.getProperties().put("timestamp" , String.valueOf(source.getDateTimeAccessed()));
         
         return node;
     }

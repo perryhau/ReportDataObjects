@@ -109,7 +109,7 @@ public class Report {
         return terms;
     }
 
-    public void setTerms(ArrayList<Term> terms) {
+    final public void setTerms(ArrayList<Term> terms) {
         this.terms = terms;
     }
 
